@@ -1,25 +1,18 @@
-name: please work
+name: Generate Datas
 
 on:
   schedule:
     - cron: "0 */4 * * *"
-
-
   workflow_dispatch:
-  
   push:
     branches:
     - main
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Clone repo
         uses: actions/checkout@v3
-    
       - name: Generate the snake files in './dist/'
         uses: Platane/snk@v3
         id: snake-gif
@@ -31,15 +24,13 @@ jobs:
             dist/github-contribution-grid-snake.gif?color_snake=white&color_dots=#e2908d,#8DDFE2,#e2908d,#8DDFE2,#e2908d
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Show build status
         run: git status
-
       - name: Push new files to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
           commit_message: Update snake animations
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
