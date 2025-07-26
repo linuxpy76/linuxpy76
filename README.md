@@ -16,5 +16,5 @@ I've come here to learn how to automate things.
 </br>
 </div>
 
-## See my 2023 / 2024 contributions
+## See my 2024 / 2025 contributions
 ![Snake animation](https://github.com/linuxpy76/linuxpy76/blob/output/github-contribution-grid-snake-dark.svg)
