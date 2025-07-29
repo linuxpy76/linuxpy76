@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Source+Code+Pro&duration=1000&pause=1000&color=00FF00&background=000000&vCenter=true&multiline=true&random=false&width=435&height=75&lines=%3E%3E%3E+print(%22Hello+World!%22);Hello+World!)](https://git.io/typing-svg)
 
-## Hello, I'm Kyle Ringler!
+## Hello, I'm Kyle!
 ### I'm a network engineer that loves MikroTik
   
 I've come here to learn how to automate things.
